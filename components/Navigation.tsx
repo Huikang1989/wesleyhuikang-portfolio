@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
+import ContactDialog from '@/components/ContactDialog';
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -11,6 +12,7 @@ export default function Navigation() {
   const [showBackground, setShowBackground] = useState(false);
   const [isManualOverride, setIsManualOverride] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
   const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
 
   // Hide navigation on project detail pages
@@ -121,17 +123,20 @@ export default function Navigation() {
             My Work
           </a>
 
-          {/* Contact Link */}
-          <a
-            href="mailto:huikang.wesley@gmail.com"
-            className={`text-base font-medium hover:scale-[1.03] active:scale-95 transition-all duration-200 ${
-              theme === 'light'
-                ? 'text-[#111827]'
-                : 'text-white'
-            }`}
-          >
-            Contact
-          </a>
+          {/* Contact Button + Dialog */}
+          <div className="relative">
+            <button
+              onClick={() => setIsContactOpen(true)}
+              className={`text-base font-medium hover:scale-[1.03] active:scale-95 transition-all duration-200 ${
+                theme === 'light'
+                  ? 'text-[#111827]'
+                  : 'text-white'
+              }`}
+            >
+              Contact
+            </button>
+            <ContactDialog isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} theme={theme} />
+          </div>
 
           {/* Theme Toggle - iOS Style Switch */}
           <div className="relative">
@@ -142,18 +147,18 @@ export default function Navigation() {
               className="relative cursor-pointer"
               style={{
                 width: '101px',
-                height: '52px',
-                borderRadius: '20px',
+                height: '46px',
+                borderRadius: '25px',
                 background: theme === 'dark' ? '#252525' : '#EBEBEB',
                 boxShadow: theme === 'dark'
                   ? '0 -1px 0 0 rgba(255, 255, 255, 0.08) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.40) inset'
                   : '0 -1px 0 0 rgba(255, 255, 255, 0.08) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.08) inset',
-                padding: '4px',
+                padding: '3px',
               }}
               aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
             >
             {/* Trapezoid Background - Behind slider */}
-            <div className="absolute inset-0 pointer-events-none" style={{ padding: '4px', zIndex: 5 }}>
+            <div className="absolute inset-0 pointer-events-none" style={{ padding: '3px', zIndex: 5 }}>
               {/* Dark mode trapezoid - under moon icon */}
               {theme === 'dark' && (
                 <motion.div
@@ -165,9 +170,9 @@ export default function Navigation() {
                     duration: 0.15,
                   }}
                   style={{
-                    width: '44px',
-                    height: '44px',
-                    left: '4px',
+                    width: '48px',
+                    height: '40px',
+                    left: '3px',
                     display: 'flex',
                     alignItems: 'flex-end',
                     justifyContent: 'center',
@@ -199,9 +204,9 @@ export default function Navigation() {
                     duration: 0.15,
                   }}
                   style={{
-                    width: '44px',
-                    height: '44px',
-                    right: '4px',
+                    width: '48px',
+                    height: '40px',
+                    right: '3px',
                     display: 'flex',
                     alignItems: 'flex-end',
                     justifyContent: 'center',
@@ -228,7 +233,7 @@ export default function Navigation() {
               className="relative z-10"
               initial={false}
               animate={{
-                x: theme === 'dark' ? 0 : 49, // 101px - 44px - 8px (total padding) = 49px
+                x: theme === 'dark' ? 0 : 47, // 101px - 48px - 6px (total padding) = 47px
               }}
               transition={{
                 type: 'spring',
@@ -236,9 +241,9 @@ export default function Navigation() {
                 damping: 30,
               }}
               style={{
-                width: '44px',
-                height: '44px',
-                borderRadius: '16px',
+                width: '48px',
+                height: '40px',
+                borderRadius: '20px',
                 border: '0.5px solid rgba(255, 255, 255, 0.60)',
                 background: 'rgba(255, 255, 255, 0.20)',
                 backdropFilter: 'blur(5px)',
@@ -249,20 +254,20 @@ export default function Navigation() {
             />
 
             {/* Icons Container - Above slider */}
-            <div className="absolute inset-0 flex items-center pointer-events-none z-20" style={{ padding: '4px' }}>
+            <div className="absolute inset-0 flex items-center pointer-events-none z-20" style={{ padding: '3px' }}>
               {/* Moon Icon - Left Side (centered in left 44px slot) */}
               <div
                 className="flex items-center justify-center absolute"
                 style={{
-                  width: '44px',
-                  height: '44px',
-                  left: '4px',
+                  width: '48px',
+                  height: '40px',
+                  left: '3px',
                 }}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="22"
+                  width="18"
+                  height="18"
                   viewBox="0 0 23 22"
                   fill="none"
                   style={{
@@ -296,15 +301,15 @@ export default function Navigation() {
               <div
                 className="flex items-center justify-center absolute"
                 style={{
-                  width: '44px',
-                  height: '44px',
-                  right: '4px',
+                  width: '48px',
+                  height: '40px',
+                  right: '3px',
                 }}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="21"
+                  height="21"
                   viewBox="0 0 28 28"
                   fill="none"
                   style={{
