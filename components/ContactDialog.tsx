@@ -147,7 +147,7 @@ export default function ContactDialog({ isOpen, onClose, theme }: ContactDialogP
 
                   {/* LinkedIn */}
                   <a
-                    href="https://www.linkedin.com/in/wesley-li-096693a7/"
+                    href="https://www.linkedin.com/in/huikang-li-096693a7/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 hover:opacity-70 transition-opacity"
