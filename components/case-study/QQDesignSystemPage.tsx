@@ -17,11 +17,89 @@ export default function QQDesignSystemPage() {
         />
       </section>
 
+      {/* Organizational Impact Section */}
+      <section className="bg-white py-[100px]">
+        <div className="max-w-[1116px] mx-auto px-6">
+          {/* Main Heading */}
+          <h2 className="text-[40px] font-bold text-black mb-8">
+            Organizational Impact
+          </h2>
+
+          {/* Introduction Text */}
+          <p className="text-[20px] leading-relaxed text-black mb-20 max-w-[700px]">
+            By building QQ's design system as a shared foundation across teams and platforms, this project significantly reduced design and engineering complexity while improving development efficiency at scale.
+          </p>
+
+          {/* Section 1: Reduced system complexity */}
+          <div className="mb-[60px]">
+            <h3 className="text-[28px] font-bold text-black mb-5">
+              Reduced system complexity by streamlining visual assets
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <p className="text-[20px] text-black mb-4">
+                  Consolidated icon usage by
+                </p>
+                <div className="text-[100px] font-bold text-black leading-none" style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif", fontStretch: 'condensed', fontWeight: 700 }}>
+                  70<span style={{ fontSize: '60px' }}>%</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-[20px] text-black mb-4">
+                  Reduced color variants by
+                </p>
+                <div className="text-[100px] font-bold text-black leading-none" style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif", fontStretch: 'condensed', fontWeight: 700 }}>
+                  91<span style={{ fontSize: '60px' }}>%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Section 2: Improved engineering efficiency */}
+          <div className="mb-[60px]">
+            <h3 className="text-[28px] font-bold text-black mb-5">
+              Improved engineering efficiency
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <p className="text-[20px] text-black mb-4">
+                  Increased design-to-development adaptation efficiency by
+                </p>
+                <div className="text-[100px] font-bold text-black leading-none" style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif", fontStretch: 'condensed', fontWeight: 700 }}>
+                  50<span style={{ fontSize: '60px' }}>%</span>+
+                </div>
+              </div>
+              <div>
+                <p className="text-[20px] text-black mb-4">
+                  Saved 200+ engineering person-days
+                </p>
+                <div className="text-[100px] font-bold text-black leading-none" style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif", fontStretch: 'condensed', fontWeight: 700 }}>
+                  200+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Section 3: Enabled large-scale adoption */}
+          <div>
+            <h3 className="text-[28px] font-bold text-black mb-6">
+              Enabled large-scale adoption
+            </h3>
+            <p className="text-[20px] text-black mb-6">
+              Supported 7,000+ product integration scenarios across multiple teams and platforms
+            </p>
+            <div className="text-[100px] font-bold text-black leading-none" style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif", fontStretch: 'condensed', fontWeight: 700 }}>
+              7,000+
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Introduction Section */}
       <section className="bg-white py-[100px]">
         <div className="max-w-[1116px] mx-auto px-6">
           {/* Section Title */}
-          <div className="flex flex-col items-center gap-6 mb-16">
+          <div className="flex flex-col items-start gap-6 mb-16">
             <h2 className="text-[40px] font-bold text-black">
               Introduction
             </h2>
@@ -110,41 +188,41 @@ export default function QQDesignSystemPage() {
             <div className="flex flex-col md:flex-row justify-center items-center gap-8">
               {/* Circle 1 - Lack of Consistency */}
               <div className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-full border-2 border-dashed border-black flex flex-col items-center justify-center text-center p-6 md:p-10 bg-white">
-                <h4 className="text-[20px] md:text-[24px] font-bold text-black mb-4">
+                <h4 className="text-[20px] md:text-[28px] font-bold text-black mb-4">
                   Lack of Consistency
                 </h4>
-                <p className="text-[12px] md:text-[14px] text-[#0C0C0C] mb-2">
+                <p className="text-[12px] md:text-[16px] text-[#0C0C0C] mb-2">
                   <strong>Issue:</strong> Inconsistent design across components
                 </p>
-                <p className="text-[12px] md:text-[14px] text-[#0C0C0C]">
+                <p className="text-[12px] md:text-[16px] text-[#0C0C0C]">
                   <strong>Impact:</strong> Increased learning curve for users and negative feedback
                 </p>
               </div>
 
               {/* Circle 2 - Redundant Resources */}
               <div className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-full border-2 border-dashed border-black flex flex-col items-center justify-center text-center p-6 md:p-10 bg-white">
-                <h4 className="text-[20px] md:text-[24px] font-bold text-black mb-4 leading-tight">
+                <h4 className="text-[20px] md:text-[28px] font-bold text-black mb-4 leading-tight">
                   Redundant Resources,<br />
                   Low Reusability
                 </h4>
-                <p className="text-[12px] md:text-[14px] text-[#0C0C0C] mb-2">
+                <p className="text-[12px] md:text-[16px] text-[#0C0C0C] mb-2">
                   <strong>Issue:</strong> Duplication of design resources with low reuse rate
                 </p>
-                <p className="text-[12px] md:text-[14px] text-[#0C0C0C]">
+                <p className="text-[12px] md:text-[16px] text-[#0C0C0C]">
                   <strong>Impact:</strong> Impacts efficiency by consuming more resources
                 </p>
               </div>
 
               {/* Circle 3 - Information Silos */}
               <div className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-full border-2 border-dashed border-black flex flex-col items-center justify-center text-center p-6 md:p-10 bg-white">
-                <h4 className="text-[20px] md:text-[24px] font-bold text-black mb-4 leading-tight">
+                <h4 className="text-[20px] md:text-[28px] font-bold text-black mb-4 leading-tight">
                   Information Silos,<br />
                   Lack of Collaboration
                 </h4>
-                <p className="text-[12px] md:text-[14px] text-[#0C0C0C] mb-2">
+                <p className="text-[12px] md:text-[16px] text-[#0C0C0C] mb-2">
                   <strong>Issue:</strong> Lack of open and collaborative mindset for co-creation
                 </p>
-                <p className="text-[12px] md:text-[14px] text-[#0C0C0C]">
+                <p className="text-[12px] md:text-[16px] text-[#0C0C0C]">
                   <strong>Impact:</strong> Creates isolated information with limited shared knowledge
                 </p>
               </div>
@@ -157,7 +235,7 @@ export default function QQDesignSystemPage() {
       <section className="bg-[#EAEAEA] py-[100px]">
         <div className="max-w-[1116px] mx-auto px-6">
           {/* Section Title */}
-          <h2 className="text-[40px] font-bold text-black text-center mb-16">
+          <h2 className="text-[40px] font-bold text-black text-left mb-16">
             Vision & Goal: Establish a unified,<br />
             collaborative workflow.
           </h2>
@@ -319,7 +397,7 @@ export default function QQDesignSystemPage() {
           </div>
 
           {/* Part 1: Guidelines */}
-          <div className="mb-20">
+          <div className="mb-[60px]">
             <h3 className="text-[32px] font-bold text-black pb-10">Part 1_Guidelines</h3>
             <div className="w-full h-[1px] bg-black mb-10" />
 
@@ -376,7 +454,7 @@ export default function QQDesignSystemPage() {
           </div>
 
           {/* Part 2: Atomic Styles */}
-          <div className="mb-20">
+          <div className="mb-[60px]">
             <h3 className="text-[28px] font-bold text-black mb-4">Part 2_Atomic Styles</h3>
             <p className="text-[16px] text-[#0C0C0C] mb-8 w-3/4">
               Atomic styles are the most basic visual design of the UI, encompassing elements such as color, fonts, icons, and layout components to ensure consistency.
@@ -723,7 +801,7 @@ export default function QQDesignSystemPage() {
           </div>
 
           {/* Part 1: Understanding Design Tokens */}
-          <div className="mb-20">
+          <div className="mb-[60px]">
             <h3 className="text-[32px] font-bold text-black pb-10">Part 1_Understanding Design Tokens</h3>
             <div className="w-full h-[1px] bg-black mb-10" />
 
@@ -773,7 +851,7 @@ export default function QQDesignSystemPage() {
           </div>
 
           {/* Part 2: Color Tokens */}
-          <div className="mb-20">
+          <div className="mb-[60px]">
             <h3 className="text-[32px] font-bold text-black pb-10">Part 2_Color Tokens</h3>
             <div className="w-full h-[1px] bg-black mb-10" />
 
