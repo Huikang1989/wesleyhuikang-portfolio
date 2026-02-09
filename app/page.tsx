@@ -148,11 +148,16 @@ export default function HomePage() {
               </h1>
 
               {/* Bio */}
-              <p className={`text-2xl leading-relaxed max-w-[53rem] ${
+              <div className={`text-2xl leading-relaxed max-w-[53rem] space-y-6 ${
                 theme === 'light' ? 'text-gray-900' : 'text-white'
               }`}>
-                Hi! I'm a product designer with 10+ years of experience creating products that meet real user needs and business goals. I have a strong passion for learning, and in the AI era I explore advanced tools to turn complexity into clear, reliable experiences. I use AI as a practical assistant to work more efficiently, iterate faster, and find better user experiences as technology evolves.
-              </p>
+                <p>
+                  Hi! I'm a product designer who creates visually exceptional experiences with meticulous attention to craft and system-level thinking. Over 10+ years, I've built design systems from scratch and shipped products serving millions of users—from AI-powered accessibility platforms to large-scale social experiences.
+                </p>
+                <p>
+                  I'm deeply curious about how technology shapes design, especially in the AI era. I actively explore and integrate AI tools into my workflow to iterate faster, work smarter, and discover new possibilities for better user experiences.
+                </p>
+              </div>
             </motion.div>
           </div>
         </section>
