@@ -99,15 +99,55 @@ export default function QQ9Page() {
         </div>
       </section>
 
+      {/* Business Impact Section */}
+      <section className="bg-[#D3DDED] pt-[100px] pb-[80px]">
+        <div className="max-w-[1200px] mx-auto px-6">
+          {/* Main Heading */}
+          <h2 className="text-[40px] font-bold text-black text-center mb-16">
+            Business Impact
+          </h2>
+
+          {/* Impact Content */}
+          <div className="space-y-8">
+            {/* First paragraph with inline metrics */}
+            <p className="text-[24px] leading-relaxed text-[#0C0C0C]">
+              Contributed to <span className="font-bold">reversing QQ's year-over-year user decline</span>, achieving{' '}
+              <span className="text-[60px] font-bold leading-none align-middle"
+                    style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+                             fontStretch: 'condensed', fontWeight: 700 }}>
+                3%
+              </span>{' '}
+              quarter-over-quarter growth and stabilizing the platform at{' '}
+              <span className="text-[60px] font-bold leading-none align-middle"
+                    style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+                             fontStretch: 'condensed', fontWeight: 700 }}>
+                570M+
+              </span>{' '}
+              monthly active users.
+            </p>
+
+            {/* Second paragraph */}
+            <p className="text-[24px] leading-relaxed text-[#0C0C0C]">
+              The comprehensive redesign modernized the experience while maintaining the platform's massive scale.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider Line */}
+      <div className="bg-[#D3DDED]">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="w-full h-[2px] bg-black/20" />
+        </div>
+      </div>
+
       {/* Introduction Section */}
       <section className="bg-[#D3DDED] py-[100px]">
         <div className="max-w-[1200px] mx-auto px-6">
           {/* Section Title */}
-          <h2 className="text-[40px] font-bold text-black text-center mb-8">
+          <h2 className="text-[40px] font-bold text-black text-center mb-16">
             Introduction
           </h2>
-          {/* Dividing line */}
-          <div className="w-full h-[1px] bg-gray-300 mb-16" />
 
           {/* Three Column Layout - different widths: 45%, 33%, 22% */}
           <div className="flex gap-12 mb-16">
@@ -340,7 +380,7 @@ export default function QQ9Page() {
             <div className="h-[280px] rounded-[16px] overflow-hidden relative">
               {/* Video Background - scaled up to fill container completely */}
               <iframe
-                src="https://player.vimeo.com/video/970180940?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                src="https://player.vimeo.com/video/970180940?background=1&autoplay=1&loop=1&autopause=0&byline=0&title=0&muted=1"
                 className="absolute border-0 pointer-events-none"
                 style={{
                   top: '50%',
@@ -350,6 +390,7 @@ export default function QQ9Page() {
                   transform: 'translate(-50%, -50%)',
                 }}
                 allow="autoplay; fullscreen; picture-in-picture"
+                title="Light and Color Animation"
               />
               {/* Overlay Content */}
               <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
@@ -399,7 +440,7 @@ export default function QQ9Page() {
             <div className="h-[280px] rounded-[16px] overflow-hidden relative">
               {/* Video Background - scaled up to fill container completely */}
               <iframe
-                src="https://player.vimeo.com/video/970197945?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                src="https://player.vimeo.com/video/970197945?background=1&autoplay=1&loop=1&autopause=0&byline=0&title=0&muted=1"
                 className="absolute border-0 pointer-events-none"
                 style={{
                   top: '50%',
@@ -409,6 +450,7 @@ export default function QQ9Page() {
                   transform: 'translate(-50%, -50%)',
                 }}
                 allow="autoplay; fullscreen; picture-in-picture"
+                title="Metaspace and Shape Animation"
               />
               {/* Overlay Content */}
               <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
@@ -447,11 +489,12 @@ export default function QQ9Page() {
           <div className="relative rounded-[12px] overflow-hidden">
             {/* Video */}
             <iframe
-              src="https://player.vimeo.com/video/970243209?autoplay=1&muted=1&loop=1&byline=0&title=0&portrait=0"
+              src="https://player.vimeo.com/video/970243209?background=1&autoplay=1&autopause=0&muted=1&loop=1&byline=0&title=0&portrait=0"
               className="w-full aspect-[16/9]"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
+              title="User's Emotional State"
             />
 
             {/* Overlaid Text - User's Emotional State */}
@@ -1193,7 +1236,7 @@ export default function QQ9Page() {
                     className="w-full h-full object-cover"
                     style={{ borderRadius: '20px' }}
                   >
-                    <source src="/images/qq9/organizing-message.mp4" type="video/mp4" />
+                    <source src="/images/qq9/organizing-message%202.mp4" type="video/mp4" />
                   </video>
                 </div>
                 {/* Phone frame - overlay */}

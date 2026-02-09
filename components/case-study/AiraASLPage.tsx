@@ -63,6 +63,86 @@ export default function AiraASLPage() {
         </div>
       </section>
 
+      {/* Impact Section */}
+      <section className="bg-white pt-[100px] pb-[80px]">
+        <div className="max-w-[1116px] mx-auto px-6">
+          {/* Main Heading */}
+          <h2 className="text-[40px] font-bold text-black mb-8">
+            Impact
+          </h2>
+
+          {/* Introduction Text */}
+          <p className="text-[20px] leading-relaxed text-black mb-4 max-w-[700px]">
+            The designed Aira ASL experience, including caption support, NoteCards, and improved feedback flow, led to measurable improvements in user satisfaction:
+          </p>
+
+          {/* Results Context */}
+          <p className="text-[20px] leading-relaxed text-black mb-[48px] max-w-[700px]">
+            Results measured within 8 weeks of feature launch (between August and September 2025), reflecting positive user response to caption support, NoteCards, and enhanced feedback flow.
+          </p>
+
+          {/* User Satisfaction Section */}
+          <h3 className="text-[28px] font-bold text-black mb-6">
+            User Satisfaction
+          </h3>
+
+          {/* Three Metrics Grid - custom widths optimized for single-line titles */}
+          <div className="grid grid-cols-1 md:grid-cols-[1.1fr_1.4fr_1.4fr] gap-[2.5rem]">
+            {/* Metric 1: 5-star ratings */}
+            <div>
+              <p className="text-[19px] font-bold text-black mb-2">
+                5-star ratings increased by
+              </p>
+              <p className="text-[19px] text-black mb-4">
+                from 13% to 36%
+              </p>
+              <div className="text-[100px] font-bold text-black leading-none"
+                   style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+                            fontStretch: 'condensed', fontWeight: 700 }}>
+                177<span style={{ fontSize: '60px' }}>%</span>
+              </div>
+            </div>
+
+            {/* Metric 2: Interpreter satisfaction (swapped position) */}
+            <div>
+              <p className="text-[19px] font-bold text-black mb-2">
+                Interpreter satisfaction increased by
+              </p>
+              <p className="text-[19px] text-black mb-4">
+                from 15.7% to 39.1%
+              </p>
+              <div className="text-[100px] font-bold text-black leading-none"
+                   style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+                            fontStretch: 'condensed', fontWeight: 700 }}>
+                149<span style={{ fontSize: '60px' }}>%</span>
+              </div>
+            </div>
+
+            {/* Metric 3: User engagement (swapped position) */}
+            <div>
+              <p className="text-[19px] font-bold text-black mb-2">
+                Unrated sessions decreased by
+              </p>
+              <p className="text-[19px] text-black mb-4">
+                from 86.1% to 62.1%
+              </p>
+              <div className="text-[100px] font-bold text-black leading-none"
+                   style={{ fontFamily: "'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+                            fontStretch: 'condensed', fontWeight: 700 }}>
+                28<span style={{ fontSize: '60px' }}>%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider Line */}
+      <div className="bg-white">
+        <div className="max-w-[1116px] mx-auto px-6">
+          <div className="w-full h-px bg-black/[0.08]" />
+        </div>
+      </div>
+
       {/* Content Sections */}
       <main className="py-20 bg-white">
         <div className="max-w-[1116px] mx-auto px-6 flex flex-col gap-12">

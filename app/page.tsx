@@ -148,7 +148,7 @@ export default function HomePage() {
               </h1>
 
               {/* Bio */}
-              <div className={`text-2xl leading-relaxed max-w-[53rem] space-y-6 ${
+              <div className={`text-[22px] leading-relaxed max-w-[53rem] space-y-6 ${
                 theme === 'light' ? 'text-gray-900' : 'text-white'
               }`}>
                 <p>
