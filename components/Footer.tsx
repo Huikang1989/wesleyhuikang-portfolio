@@ -77,7 +77,7 @@ export default function Footer() {
 
           {/* Download CV Button */}
           <a
-            href="https://drive.google.com/file/d/1YnhQYdlf2ruV-TFBztx11iF8yhYXbg5U/view?usp=sharing"
+            href="https://drive.google.com/file/d/1qQfAqBmUfaZ05elEN8GemYzMU3i7StmV/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-full border hover:scale-[1.03] active:scale-95 transition-all duration-200 ${
